@@ -9,7 +9,12 @@ This tool can be installed in two ways, either cloning the repository and runnin
 ``
 git clone https://github.com/pedrohcs8/autoMCServerCreator.git
 python3 main.py
-OR
+``
+
+Or
+
+``
+git clone https://github.com/pedrohcs8/autoMCServerCreator.git
 python3 standalone-creator.py
 ``
 

@@ -1,7 +1,7 @@
 from simple_term_menu import TerminalMenu
 import os
 
-def createSpigot():
+def createCurseforge():
     modpack_url = input("Modpack URL:\n")
     cf_key = input("Curseforge API Key:\n")
     folder = input("Folder\n")
@@ -52,7 +52,7 @@ def createSpigot():
 
     if voip == True:
         os.system(
-            f"TYPE=AUTO_CURSEFORGE -e CF_PAGE_URL={modpack_url} -e CF_API_KEY='{cf_key}' -e ONLINE_MODE={online_mode} -e MEMORY={memory}G -p 25565:25565 -p 24454/24454/udp -e EULA=TRUE --name {container_name} itzg/minecraft-server:{java_version}")
+            f"docker run -d -it -v ~/{folder}:/data -e TYPE=AUTO_CURSEFORGE -e CF_PAGE_URL={modpack_url} -e CF_API_KEY='{cf_key}' -e ONLINE_MODE={online_mode} -e MEMORY={memory}G -p 25565:25565 -p 24454:24454/udp -e EULA=TRUE --name {container_name} itzg/minecraft-server:{java_version}")
     else:
         os.system(
-            f"TYPE=AUTO_CURSEFORGE -e CF_PAGE_URL={modpack_url} -e CF_API_KEY='{cf_key}' -e ONLINE_MODE={online_mode} -e MEMORY={memory}G -p 25565:25565 -p 24454/24454/udp -e EULA=TRUE --name {container_name} itzg/minecraft-server:{java_version}")
+            f"docker run -d -it -v ~/{folder}:/data -e TYPE=AUTO_CURSEFORGE -e CF_PAGE_URL={modpack_url} -e CF_API_KEY='{cf_key}' -e ONLINE_MODE={online_mode} -e MEMORY={memory}G -p 25565:25565 -e EULA=TRUE --name {container_name} itzg/minecraft-server:{java_version}")

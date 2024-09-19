@@ -1,6 +1,6 @@
 This is a project created for facilitating the creation of minecraft servers locally via docker using [itzg/minecraft-server](https://hub.docker.com/r/itzg/minecraft-server).
 
-**This tool requires [Docker](https://www.docker.com/)**
+**This tool requires [Docker](https://www.docker.com/) running without sudo**
 
 **Installation Methods**
 
@@ -9,7 +9,12 @@ This tool can be installed in two ways, either cloning the repository and runnin
 ``
 git clone https://github.com/pedrohcs8/autoMCServerCreator.git
 python3 main.py
-OR
+``
+
+Or
+
+``
+git clone https://github.com/pedrohcs8/autoMCServerCreator.git
 python3 standalone-creator.py
 ``
 

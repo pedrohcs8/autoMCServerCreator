@@ -4,11 +4,13 @@ This is a project created for facilitating the creation of minecraft servers loc
 
 **Installation Methods**
 
-This tool can be installed in two ways, either cloning the repository and running main.py:
+This tool can be installed in two ways, either cloning the repository and running main.py or standalone-creator.py:
 
 ``
 git clone https://github.com/pedrohcs8/autoMCServerCreator.git
 python3 main.py
+OR
+python3 standalone-creator.py
 ``
 
 Or reaching into [releases]() and running the standalone script:

@@ -8,6 +8,9 @@ This tool can be installed in two ways, either cloning the repository and runnin
 
 ``
 git clone https://github.com/pedrohcs8/autoMCServerCreator.git
+``
+<br>
+``
 python3 main.py
 ``
 
@@ -15,6 +18,9 @@ Or
 
 ``
 git clone https://github.com/pedrohcs8/autoMCServerCreator.git
+``
+<br>
+``
 python3 standalone-creator.py
 ``
 
